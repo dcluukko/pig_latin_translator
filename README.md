@@ -1,59 +1,57 @@
-Exercise Thursday
-Introduction to Programming Arrays and Looping Leap Year, Pig Latin
-Text
-Cheat sheet
-If you would like to view an example README, check out this one made by Epicodus graduates, David Wilson and Marilyn Carlin. Below is the raw version.
+# Pig Latin Translator
 
-# Scrabble Score Checker
+#### A program that intakes a string of multiple words and outputs the string in pig latin.  1.24.2020
 
-#### A program that allows users to input a word and determine its raw Scrabble score, assuming no special tiles. 6/1/17
-
-#### By **Marilyn Carlin and David Wilson**
+#### By **Dana Luukko and Stephanie Podolak**
 
 ## Description
 
-A website created with C# and HTML where a user can submit a word and determine its raw Scrabble score.
+A website created with JavaScript, CSS and HTML where a user enter a sentance and the site will translate it to pig latin. User input is sliced into an array by word.....TO BE CONTINUED!!!!
 
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "pants" | Output: "pants" |
-| **Program Removes Spaces from User Input**| User Input: "pants pants" | Output: "pantspants" |
-| **Program Removes Punctuation from User Input**| Input: "p#an^t@s  /p(ant%s" | Output: "pantspants" |
-| **Program Assigns Characters Numeric Values** | Input: "pants" | Output: "3 1 1 1 1" |
-| **Program Sums Character Values**| Input: "3 1 1 1 1" | Page Displays: 7 |
-
+| **A sentence with ranging cases** | bOT | otBay |
+| **1 word, 1 vowel** | pig | Output: igPay |
+| **Multiple consanants, 1 vowel**| ship | Output: ipShay |
+| **2 vowels**| zebra | ebraZay|
+| **vowels start** | egg | eggWay|
+| **2 vowels start**| each | eachWay |
+| **starts w. qu** | squeak | ickQuay |
+|**qu as first vowel**| squeak | ueakSquy |
+|**any number**| 26 | false |
+|**starts w/ symbol**| *pig | false |
+|**Includes symbol not at start**| hi! | i!Hay |
+|**If ends with "!" or "?"**| hi? | iHay? |
 ## Setup/Installation Requirements
 
-1. To run this program, you must have a C# compiler. I use [Mono](http://www.mono-project.com).
-2. Install the [Nancy](http://nancyfx.org/) framework to use the view engine. Follow the link for installation instructions.
-3. Clone this repository.
-4. Open the command line--I use PowerShell--and navigate into the repository. Use the command "dnx kestrel" to start the server.
-5. On your browser, navigate to "localhost:5004" and enjoy!
+1. Clone this repository to your desktop. If using git bash you can do this by typing "git clone https://github.com/spodolak/pig_latin_translator.git" into your command line while in desktop directory.
+2. Navigate inside project directory by entering "cd pig_latin_translator" in git bash.
+3. Open index.html file in your browser of choice by entering "open index.html".
+
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
-* C#
-  * Nancy framework
-  * Razor View Engine
-  * ASP.NET Kestrel HTTP server
-  * xUnit
-
+* JavaScript
+* jQuery-3.4.1
 * HTML
+* CSS
+* Bootstrap-4.4.1
 
 ## Support and contact details
 
-_Email no one with any questions, comments, or concerns._
+_For any questions or comments please contact:_
+ * Steph Podolak
+* Dana Luukko
 
 ### License
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2017 **_{Marilyn Carlin, David Wilson}_**
+Copyright (c) 2017 **_{Dana Luukko, Stephanie Podolak}_**
 Tracks
 Previous
 Next
