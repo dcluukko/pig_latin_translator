@@ -18,9 +18,11 @@ var findFirstVowel = function(word) {
 
 var pigLatinEnding = function(word) {
    var wordArray = word.split("");
-   var firstChar = $(wordArray.slice(0,vowelIndex));
-   var wordEnding = (firstChar[0].toUpperCase() + "ay");
-  //  console.log(wordEnding);
+   var firstChar = wordArray.slice(0, vowelIndex);
+   firstChar[0].toUpperCase;
+   var firstCharArray = firstChar.join("");
+   var wordEnding = (firstCharArray.toUpperCase(0) + "ay");
+   console.log(wordEnding);
    return wordEnding;
 
 };
@@ -29,23 +31,17 @@ var rootWord = function(word) {
   var wordArray = word.split("");
   var endChars = wordArray.slice(vowelIndex + 1);
   var reunite = endChars.join("");
-  
-  // console.log(reunite);
   return reunite;
 };
-// var firstChar = $(wordArray.slice(0,1));
-// var pigLatinEnding = (firstChar[0].toUpperCase() + "ay");
-
-// var wordEnding = $(wordArray.slice(1));
 
 $(document).ready(function () {
   $("form#pigLatinForm").submit(function () {
     var input = $("input#sentence").val();
     input = toLowerCase(input);
     letters = findFirstVowel(input);
-    alert(vowelIndex);
-    // latinEnding = pigLatinEnding(input);
-    // latinMiddle = rootWord(input);
+    latinEnding = pigLatinEnding(input);
+    latinMiddle = rootWord(input);
+
     
     event.preventDefault();
   });
